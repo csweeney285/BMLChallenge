@@ -1,0 +1,3 @@
+github "KevinVitale/ReactiveJSON" "2068b08ccc0b9adeedfa54a10c282d2f976f082c"
+github "ReactiveCocoa/ReactiveSwift" "1.1.5"
+github "antitypical/Result" "3.2.4"

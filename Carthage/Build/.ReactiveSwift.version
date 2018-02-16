@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.1.5",
+  "iOS" : [
+    {
+      "name" : "ReactiveSwift",
+      "hash" : "06fab9f0fc2045ff5de5af5fa3ec897b47a94d59520aa620a20f315df588bd55"
+    }
+  ]
+}
