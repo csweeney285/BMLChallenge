@@ -88,6 +88,7 @@ class CustomTableViewController: UITableViewController {
                     }
                     //reload tableview on mainthread
                     DispatchQueue.main.async {
+                        self.tableView.allowsSelection = true
                         self.tableView.reloadData()
                     }
                
@@ -136,6 +137,7 @@ class CustomTableViewController: UITableViewController {
             
             let commentAction = UIAlertAction(title: "Comments", style: .default) { action in
                 self.userBool = false
+                self.tableView.allowsSelection = false
                 DispatchQueue.global(qos: .background).async {
                     self.requestWithEndPoint(value: "comments?userId=\(selectedUser.id)")
                 }
@@ -144,6 +146,7 @@ class CustomTableViewController: UITableViewController {
             
             let postsAction = UIAlertAction(title: "Posts", style: .default) { action in
                 self.userBool = false
+                self.tableView.allowsSelection = false
                 DispatchQueue.global(qos: .background).async {
                     self.requestWithEndPoint(value: "posts?userId=\(selectedUser.id)")
                 }
